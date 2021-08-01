@@ -67,7 +67,7 @@ const Navbar = () => {
               <Link
                 smooth={true}
                 to="Education"
-                offset={-110}
+                offset={-125}
                 className="nav-link"
                 href="#"
               >
@@ -78,7 +78,7 @@ const Navbar = () => {
               <Link
                 smooth={true}
                 to="skills"
-                offset={-110}
+                offset={-125}
                 className="nav-link"
                 href="#"
               >
@@ -90,7 +90,7 @@ const Navbar = () => {
               <Link
                 smooth={true}
                 to="Portfolio"
-                offset={-110}
+                offset={-120}
                 className="nav-link"
                 href="#"
               >
@@ -102,7 +102,7 @@ const Navbar = () => {
               <Link
                 smooth={true}
                 to="Contacts"
-                offset={-110}
+                offset={-120}
                 className="nav-link"
                 href="#"
               >

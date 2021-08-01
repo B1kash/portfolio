@@ -390,6 +390,12 @@ svg {
   height: 27.5rem;
   width: 25rem;
 }
+@media (max-width: 786px) {
+  .main-image {
+    height: 20.5rem;
+    width: 18rem;
+  }
+}
 .progress-label {
   text-align: left;
 }
@@ -420,11 +426,15 @@ svg {
 } */
 .portfolio-wrapper {
   background: var(--primary-light-grey);
-  padding: 3rem 0;
+  padding: 0rem 0;
+}
+
+.py-5 {
+  padding-bottom: 0rem !important;
 }
 .portfolio-wrapper h1 {
   color: var(--primary-blue);
-  padding-bottom: 15.5rem !important;
+  padding-bottom: 20rem !important;
 }
 
 .portfolio-wrapper h1 {
@@ -440,6 +450,9 @@ svg {
 .portfolio-image-box {
   position: relative;
   margin: 1rem;
+}
+.image-box-wrapper {
+  padding-bottom: 1.5rem;
 }
 /*---------  Overflow ------------------*/
 .overflow {
@@ -589,6 +602,10 @@ input.form-control {
 }
 textarea.form-control {
   margin: -0.3rem 0;
+}
+
+.text-center {
+  color: crimson;
 }
 /*-----------MEDIA-------------*/
 @media (max-width: 768px) {

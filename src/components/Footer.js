@@ -23,7 +23,7 @@ const Footer = () => {
               <a href="tel:1234567890">+91 1234567890</a>
             </div>
             <div className="d-flex">
-              <p>bikashbaishya362gmail.com</p>
+              <p>bikashbaishya36@gmail.com</p>
             </div>
           </div>
           <div className="col-lg-3 col-md-2 col-sm-6">
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
             <div className="d-flex justify-content-center">
-              <FacebookShareButton
+              {/* <FacebookShareButton
                 url={"https://www.facebook.com/bikash.baishya.5074"}
               >
                 <FacebookIcon className="mx-3" size={64} />
@@ -66,7 +66,7 @@ const Footer = () => {
                 url={"https://www.facebook.com/bikash.baishya.5074"}
               >
                 <LinkedinIcon className="mx-3" size={64} />
-              </LinkedinShareButton>
+              </LinkedinShareButton> */}
               <br />
               <p className="pt-3 text-center">
                 Copyright&copy;
