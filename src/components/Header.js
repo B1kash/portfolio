@@ -8,10 +8,10 @@ const Header = () => {
     <div id="Home" className="header-wraper">
       <div className="main-info">
         <Jump top>
-          <h1>Hey! </h1>
+          <h1>Hey! I'm </h1>
         </Jump>
         <Fade left>
-          <h2>I'm Bikash Baishya</h2>
+          <h2>Bikash Baishya</h2>
         </Fade>
         <Typed
           className="typed-text"

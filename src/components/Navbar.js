@@ -1,8 +1,11 @@
+// import React from "react";
+// import { useState } from "react";
 import React from "react";
 import { Link } from "react-scroll";
-import gif from "../BB.gif";
+import gif from "../BB.png";
 import insta from "../4.png";
 import git from "../5.png";
+import { useState } from "react";
 
 //fontawosome imports
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +14,24 @@ import git from "../5.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    const hideMenu = document.getElementById("navbarSupportedContent");
+    hideMenu.classList.remove("show");
+    const handleToggler = document.getElementById("toggler");
+    handleToggler.classList.add("collapsed");
+  };
+
+  const handleState = (e) => {
+    e.preventDefault();
+    if (open) {
+      setOpen(false);
+    } else {
+      setOpen(true);
+    }
+  };
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div className="container">
@@ -28,6 +49,8 @@ const Navbar = () => {
         </a> */}
         <button
           className="navbar-toggler"
+          id="toggler"
+          onClick={handleState}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -35,7 +58,9 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="sd">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png" />
+          </span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -44,6 +69,7 @@ const Navbar = () => {
                 smooth={true}
                 to="Home"
                 className="nav-link "
+                onClick={handleClick}
                 aria-current="page"
                 href="#"
               >
@@ -57,6 +83,7 @@ const Navbar = () => {
                 to="About"
                 offset={-110}
                 className="nav-link"
+                onClick={handleClick}
                 href="#"
               >
                 About Me
@@ -69,6 +96,7 @@ const Navbar = () => {
                 to="Education"
                 offset={-125}
                 className="nav-link"
+                onClick={handleClick}
                 href="#"
               >
                 Education
@@ -80,6 +108,7 @@ const Navbar = () => {
                 to="skills"
                 offset={-125}
                 className="nav-link"
+                onClick={handleClick}
                 href="#"
               >
                 Skills
@@ -92,6 +121,7 @@ const Navbar = () => {
                 to="Portfolio"
                 offset={-120}
                 className="nav-link"
+                onClick={handleClick}
                 href="#"
               >
                 Portfolio
@@ -102,8 +132,9 @@ const Navbar = () => {
               <Link
                 smooth={true}
                 to="Contacts"
-                offset={-120}
+                offset={-90}
                 className="nav-link"
+                onClick={handleClick}
                 href="#"
               >
                 Contacts
