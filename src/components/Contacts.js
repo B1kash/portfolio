@@ -89,7 +89,7 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Email"
                   name="email"
-                  {...register("Email", {
+                  {...register("email", {
                     required: true,
                     pattern: /^\S+@\S+$/i,
                   })}
