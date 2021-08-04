@@ -95,7 +95,7 @@ const Contacts = () => {
                   })}
                 />
                 <span id="xyx">
-                  {errors.Email?.type === "required" &&
+                  {errors.email?.type === "required" &&
                     "pattern" &&
                     "Email is required"}
                 </span>
